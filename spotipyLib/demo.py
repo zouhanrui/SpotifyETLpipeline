@@ -37,13 +37,13 @@ artist = spotify.artist(artist_id)
 user = spotify.user('Hanrui')
 #print(user)
 
-playlist_id = 'spotify:playlist:0ldNWi8AMzxJUFI8eCzBTe'
+playlist_id = 'spotify:playlist:2I5YCG6YCKZqJsZ3LdzBuD'
 playlist = spotify.playlist(playlist_id)
-#print(playlist)
+print(playlist['name'])
 
 album_id = 'spotify:album:1JvoMzqg04nC29gam4Qaiq'
 album = spotify.album(album_id)
-print(len(album['tracks']['items']))
+#print(len(album['tracks']['items']))
 
 playlist_tracks = spotify.playlist_tracks(playlist_id=playlist_id)
 #print(playlist_tracks)

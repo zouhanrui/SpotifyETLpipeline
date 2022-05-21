@@ -11,8 +11,9 @@ artist_id = '1uNFoZAHBGtllmzznpCI3s'
 
 
 def get_albums_from_artist(artist_id):
+    #flag = 1
     artist_albums = {}
-    albums = spotify.artist_albums(artist_id=artist_id, limit=50)
+    albums = spotify.artist_albums(artist_id=artist_id, limit=10)
     for item in albums['items']:
         album_name = item['name']
         release_date = item['release_date']
@@ -20,13 +21,18 @@ def get_albums_from_artist(artist_id):
         album_uri = item['uri']
         # available_markets = item['available_markets']
 
+        # if album name is the duplicated, overwrite
         artist_albums[album_name] = {}
+        #artist_albums[album_name]["flag"] = flag
         artist_albums[album_name]["release_date"] = release_date
         artist_albums[album_name]["total_tracks"] = total_tracks
         artist_albums[album_name]["album_uri"] = album_uri
         # artist_albums[album_name]["available_markets"] = available_markets
+        #flag += 1
 
-    print(artist_albums.keys())
+    #print(artist_albums.keys())
+    #print(artist_albums)
+
     return artist_albums
 
 

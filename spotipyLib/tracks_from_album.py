@@ -22,7 +22,7 @@ def get_tracks_from_album(album_id):
         tracks[track_name]["duration_ms"] = duration_ms
         tracks[track_name]["track_uri"] = track_uri
 
-    print(tracks)
+    #print(tracks)
     return tracks
 
 
