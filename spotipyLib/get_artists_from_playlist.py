@@ -12,7 +12,7 @@ playlist_id = 'spotify:playlist:0ldNWi8AMzxJUFI8eCzBTe'
 LIMIT = 10
 
 def get_artists_from_playlists(playlist_url):
-    playlist_tracks = spotify.playlist_tracks(playlist_id=playlist_url, limit=10)
+    playlist_tracks = spotify.playlist_tracks(playlist_id=playlist_url, limit=20)
     artists = {}
     for song in playlist_tracks['items']:
         track = song['track']

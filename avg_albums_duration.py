@@ -1,18 +1,27 @@
 import csv
+from datetime import datetime
 import os
+
+os.environ['SPOTIPY_CLIENT_ID'] = ''
+os.environ['SPOTIPY_CLIENT_SECRET'] = ''
+
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
+
+spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
+
+import boto3
+from awsboto3.boto3_s3_functions import upload_file, \
+    list_buckets, \
+    list_objects_from_bucket
 
 from spotipyLib.get_albums_from_artist import get_albums_from_artist
 from spotipyLib.get_artists_from_playlist import get_artists_from_playlists
 from spotipyLib.tracks_from_album import get_tracks_from_album
 
-os.environ['SPOTIPY_CLIENT_ID'] = ''
-os.environ['SPOTIPY_CLIENT_SECRET'] = ''
+s3_client = boto3.client('s3')
 
-spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
-
-PLAYLIST_URL = 'spotify:playlist:7HK42eBp4kAFRSVejJ3QIn'
+PLAYLIST_URL = 'spotify:playlist:3EuBX91Ew2WBaL2hvLCs32'
 
 playlist = spotify.playlist(PLAYLIST_URL)
 playlist_name = playlist['name']
@@ -71,8 +80,26 @@ def get_avg_album_duration():
 
 def main():
     final_data_dictionary = get_avg_album_duration()
-    print(final_data_dictionary)
-    return final_data_dictionary
+    # print(final_data_dictionary)
+
+    # boto3 s3 sdk
+    """
+    buckets = list_buckets()
+    all_objects_by_bucket = {}
+    for bucket in buckets:
+        objects = list_objects_from_bucket(bucket_name=bucket)
+        all_objects_by_bucket[bucket] = objects
+    print('List all objects from all s3 buckets:\n ' + str(all_objects_by_bucket))
+    """
+
+    # Upload csv to s3
+    date = datetime.now()
+    bucket_name = 'spotify-project-data'
+    file_path = f'data/{playlist_name}.csv'
+    key = f'{date.year}/{date.month}/{date.day}/{playlist_name}.csv'
+    upload_file(file_path=file_path, bucket_name=bucket_name, key=key)
+
+    # return final_data_dictionary
 
 
 if __name__ == '__main__':
