@@ -78,7 +78,7 @@ def get_avg_album_duration():
     return final_data_dictionary
 
 
-def main():
+def load_data_s3():
     final_data_dictionary = get_avg_album_duration()
     # print(final_data_dictionary)
 
@@ -98,6 +98,14 @@ def main():
     file_path = f'data/{playlist_name}.csv'
     key = f'{date.year}/{date.month}/{date.day}/{playlist_name}.csv'
     upload_file(file_path=file_path, bucket_name=bucket_name, key=key)
+
+
+def lambda_handler(event, context):
+    load_data_s3()
+
+
+def main():
+    load_data_s3()
 
     # return final_data_dictionary
 

@@ -16,6 +16,7 @@ Release_date,Album name,Artist name,Total Track,Total duration_ms
 2021-03-24,一線之隔,Ryan.B,2,400596
 2020-11-25,特别关系,Ryan.B,1,196720
 2021-05-11,Tizzy T,Tizzy T,13,2641498
+2022-05-27,你最好知道,Tizzy T,6,1235442
 2020-06-08,呼吸,Tizzy T,1,168404
 2019-11-21,天顶一粒星,Tizzy T,1,233536
 2019-09-13,噩梦,Tizzy T,1,198357
@@ -24,7 +25,6 @@ Release_date,Album name,Artist name,Total Track,Total duration_ms
 2018-10-17,Relax (M3SSIAH Remix),Tizzy T,1,218666
 2018-10-05,贫民百万男孩,Tizzy T,1,212000
 2021-07-21,2021 MDSK CYPHER,Tizzy T,1,694539
-2021-06-08,phone project.,Tizzy T,25,5151673
 2018-08-31,Bloom,Troye Sivan,10,2209911
 2016-11-18,Blue Neighbourhood (The Remixes),Troye Sivan,14,3271897
 2015-12-04,Blue Neighbourhood (Deluxe),Troye Sivan,16,3531824
@@ -35,7 +35,6 @@ Release_date,Album name,Artist name,Total Track,Total duration_ms
 2021-09-09,Angel Baby,Troye Sivan,1,220779
 2019-11-22,Divinely Uninspired To A Hellish Extent (Extended Edition),Lewis Capaldi,15,3194756
 2019-05-17,Divinely Uninspired To A Hellish Extent,Lewis Capaldi,12,2549847
-2022-02-25,Cry Yourself To Sleep,Lewis Capaldi,4,805266
 2020-08-14,Before You Go (Orchestral),Lewis Capaldi,2,442671
 2020-07-03,Before You Go (Edessa Remix),Lewis Capaldi,2,411192
 2020-05-15,To Tell The Truth I Can't Believe We Got This Far EP,Lewis Capaldi,6,1387976
@@ -43,6 +42,7 @@ Release_date,Album name,Artist name,Total Track,Total duration_ms
 2020-01-24,Before You Go EP,Lewis Capaldi,4,877821
 2019-12-16,Before You Go (Piano Version),Lewis Capaldi,2,433874
 2019-11-19,Before You Go,Lewis Capaldi,2,435306
+2019-10-25,Bruises (Delta Jack Remix),Lewis Capaldi,2,420652
 2022-04-01,Wings Of Stone,Adam Levine,1,226512
 2021-08-06,Good Mood (Original Song From Paw Patrol: The Movie),Adam Levine,1,210643
 2021-02-18,Lifestyle (feat. Adam Levine) [David Guetta Slap House Mix],Adam Levine,1,135661
@@ -70,10 +70,11 @@ Release_date,Album name,Artist name,Total Track,Total duration_ms
 2022-02-28,Kiedyś To Było,Bad Meets Evil,38,8546917
 2022-01-21,Car Bass,Bad Meets Evil,27,5608368
 2022-01-21,100% Éxitos - 2011,Bad Meets Evil,37,8591455
+2022-05-26,The Eminem Show (Expanded Edition),Eminem,38,9244867
 2020-12-18,Music To Be Murdered By - Side B (Deluxe Edition),Eminem,36,7028602
 2020-01-17,Music To Be Murdered By,Eminem,20,3873549
 2018-08-31,Kamikaze,Eminem,13,2755089
-2017-12-14,Revival,Eminem,19,4665675
+2017-12-15,Revival,Eminem,19,4665675
 2021-09-02,Certified Lover Boy,Drake,21,5173116
 2020-05-01,Dark Lane Demo Tapes,Drake,14,2991074
 2019-08-02,Care Package,Drake,17,4425273
@@ -131,9 +132,4 @@ Release_date,Album name,Artist name,Total Track,Total duration_ms
 2018-09-26,RETURN,iKON,11,2391142
 2018-03-07,iKON JAPAN DOME TOUR 2017 ADDITIONAL SHOWS,iKON,19,4158980
 2018-01-27,RETURN (KR EDITION),iKON,12,2571121
-2021-10-29,=,Ed Sheeran,14,2910754
-2019-07-12,No.6 Collaborations Project,Ed Sheeran,15,2995806
-2017-03-03,÷ (Deluxe),Ed Sheeran,16,3573926
-2013,x (Wembley Edition),Ed Sheeran,24,6000521
-2014-06-23,5,Ed Sheeran,32,8169769
-2014-06-21,x (Deluxe Edition),Ed Sheeran,16,3956377
+2022-05-27,= (Tour Edition),Ed Sheeran,24,4908863
